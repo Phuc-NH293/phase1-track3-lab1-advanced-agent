@@ -1,10 +1,23 @@
 from __future__ import annotations
+
 from typing import Literal, Optional, TypedDict
+
 from pydantic import BaseModel, Field
+
+FailureMode = Literal[
+    "none",
+    "entity_drift",
+    "incomplete_multi_hop",
+    "wrong_final_answer",
+    "looping",
+    "reflection_overfit",
+]
+
 
 class ContextChunk(BaseModel):
     title: str
     text: str
+
 
 class QAExample(BaseModel):
     qid: str
@@ -12,14 +25,24 @@ class QAExample(BaseModel):
     question: str
     gold_answer: str
     context: list[ContextChunk]
+    mock_wrong_answer: Optional[str] = None
+    mock_failure_mode: Optional[FailureMode] = None
+
 
 class JudgeResult(BaseModel):
-    # TODO: Học viên định nghĩa các trường cần thiết cho kết quả đánh giá (score, reason, ...)
-    pass
+    score: Literal[0, 1]
+    reason: str
+    missing_evidence: list[str] = Field(default_factory=list)
+    spurious_claims: list[str] = Field(default_factory=list)
+    failure_mode: FailureMode = "none"
+
 
 class ReflectionEntry(BaseModel):
-    # TODO: Học viên định nghĩa các trường cần thiết cho một mục reflection (attempt_id, lesson, strategy, ...)
-    pass
+    attempt_id: int = Field(ge=1)
+    failure_reason: str
+    lesson: str
+    next_strategy: str
+
 
 class AttemptTrace(BaseModel):
     attempt_id: int
@@ -29,6 +52,7 @@ class AttemptTrace(BaseModel):
     reflection: Optional[ReflectionEntry] = None
     token_estimate: int = 0
     latency_ms: int = 0
+
 
 class RunRecord(BaseModel):
     qid: str
@@ -40,9 +64,10 @@ class RunRecord(BaseModel):
     attempts: int
     token_estimate: int
     latency_ms: int
-    failure_mode: Literal["none", "entity_drift", "incomplete_multi_hop", "wrong_final_answer", "looping", "reflection_overfit"]
+    failure_mode: FailureMode
     reflections: list[ReflectionEntry] = Field(default_factory=list)
     traces: list[AttemptTrace] = Field(default_factory=list)
+
 
 class ReportPayload(BaseModel):
     meta: dict
@@ -51,6 +76,7 @@ class ReportPayload(BaseModel):
     examples: list[dict]
     extensions: list[str]
     discussion: str
+
 
 class ReflexionState(TypedDict):
     question: str

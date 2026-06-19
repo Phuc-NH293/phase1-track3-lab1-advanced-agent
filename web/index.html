@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dashboard kết quả benchmark ReAct và Reflexion trên HotpotQA."
+    />
+    <title>Reflexion Lab — Benchmark</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="#overview" aria-label="Về đầu trang">
+        <span class="brand-mark">R</span>
+        <span>
+          <strong>Reflexion Lab</strong>
+          <small>Experiment 04</small>
+        </span>
+      </a>
+      <nav aria-label="Điều hướng chính">
+        <a href="#overview">Tổng quan</a>
+        <a href="#comparison">So sánh</a>
+        <a href="#examples">Mẫu chạy</a>
+      </nav>
+      <span class="status"><i></i> Benchmark complete</span>
+    </header>
+
+    <main>
+      <section class="hero" id="overview">
+        <div class="hero-copy">
+          <p class="eyebrow"><span>04</span> HotpotQA · Multi-hop reasoning</p>
+          <h1>Đo hiệu quả của<br /><em>tự phản chiếu.</em></h1>
+          <p class="hero-description">
+            Benchmark ReAct và Reflexion trên 100 câu hỏi HotpotQA thật.
+            Kết quả cho thấy reflection sửa được toàn bộ lỗi vòng đầu trong
+            mock runtime.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#comparison">Xem kết quả <span>↓</span></a>
+            <a class="button ghost" href="../outputs/hotpot_dev_100_mock/report.json">
+              Mở report.json
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-score" aria-label="Điểm autograde">
+          <div class="score-orbit">
+            <div class="orbit-label orbit-label-a">Schema 30/30</div>
+            <div class="orbit-label orbit-label-b">Experiment 30/30</div>
+            <div class="orbit-label orbit-label-c">Analysis 20/20</div>
+            <svg viewBox="0 0 240 240" role="img" aria-label="Điểm 100 trên 100">
+              <circle class="score-track" cx="120" cy="120" r="102"></circle>
+              <circle class="score-progress" cx="120" cy="120" r="102"></circle>
+            </svg>
+            <div class="score-value">
+              <strong>100</strong>
+              <span>/ 100</span>
+              <small>AUTOGRADE</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="metric-strip" aria-label="Thông tin dataset">
+        <article>
+          <span class="metric-index">01</span>
+          <strong id="question-count">100</strong>
+          <p>Câu hỏi thật</p>
+        </article>
+        <article>
+          <span class="metric-index">02</span>
+          <strong id="record-count">200</strong>
+          <p>Agent runs</p>
+        </article>
+        <article>
+          <span class="metric-index">03</span>
+          <strong>3</strong>
+          <p>Failure modes</p>
+        </article>
+        <article>
+          <span class="metric-index">04</span>
+          <strong>Hard</strong>
+          <p>Độ khó</p>
+        </article>
+      </section>
+
+      <section class="section comparison-section" id="comparison">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Kết quả chính</p>
+            <h2>Reflection đổi cục diện.</h2>
+          </div>
+          <p>
+            Đổi lại độ chính xác cao hơn là số lần thử, token và latency tăng.
+            Đây là trade-off cốt lõi của kiến trúc Reflexion.
+          </p>
+        </div>
+
+        <div class="comparison-grid">
+          <article class="accuracy-card">
+            <div class="card-heading">
+              <div>
+                <span class="card-kicker">Exact Match</span>
+                <h3>Độ chính xác</h3>
+              </div>
+              <span class="delta-pill">+75 điểm %</span>
+            </div>
+            <div class="accuracy-bars">
+              <div class="bar-row">
+                <div class="bar-meta">
+                  <span><i class="dot react"></i>ReAct</span>
+                  <strong id="react-em">25%</strong>
+                </div>
+                <div class="bar-track">
+                  <div class="bar react-bar" style="--value: 25%"></div>
+                </div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-meta">
+                  <span><i class="dot reflexion"></i>Reflexion</span>
+                  <strong id="reflexion-em">100%</strong>
+                </div>
+                <div class="bar-track">
+                  <div class="bar reflexion-bar" style="--value: 100%"></div>
+                </div>
+              </div>
+            </div>
+            <p class="card-note">
+              <span>75</span> câu trả lời sai ban đầu được sửa sau reflection.
+            </p>
+          </article>
+
+          <article class="cost-card">
+            <div class="card-heading">
+              <div>
+                <span class="card-kicker">Cost profile</span>
+                <h3>Chi phí suy luận</h3>
+              </div>
+            </div>
+            <div class="cost-list">
+              <div>
+                <span>Lần thử trung bình</span>
+                <p><b id="react-attempts">1.00</b><i>→</i><strong id="reflexion-attempts">1.75</strong></p>
+              </div>
+              <div>
+                <span>Token trung bình</span>
+                <p><b id="react-tokens">1,413</b><i>→</i><strong id="reflexion-tokens">2,696</strong></p>
+              </div>
+              <div>
+                <span>Latency trung bình</span>
+                <p><b id="react-latency">2.25 ms</b><i>→</i><strong id="reflexion-latency">4.31 ms</strong></p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section failure-section">
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow">Failure analysis</p>
+            <h2>Ba lỗi, cùng một lối thoát.</h2>
+          </div>
+          <div class="legend">
+            <span><i class="dot react"></i>ReAct</span>
+            <span><i class="dot reflexion"></i>Reflexion</span>
+          </div>
+        </div>
+
+        <div class="failure-grid" id="failure-grid">
+          <article>
+            <span class="failure-number">25</span>
+            <div>
+              <h3>Entity drift</h3>
+              <p>Trôi sang một thực thể liên quan nhưng không phải đáp án cuối.</p>
+            </div>
+            <div class="mini-bars"><i style="--h: 100%"></i><b style="--h: 4%"></b></div>
+          </article>
+          <article>
+            <span class="failure-number">25</span>
+            <div>
+              <h3>Incomplete multi-hop</h3>
+              <p>Dừng ở thực thể trung gian trước khi hoàn thành bước suy luận cuối.</p>
+            </div>
+            <div class="mini-bars"><i style="--h: 100%"></i><b style="--h: 4%"></b></div>
+          </article>
+          <article>
+            <span class="failure-number">25</span>
+            <div>
+              <h3>Wrong final answer</h3>
+              <p>Chọn đáp án hợp lý nhưng không được chứng minh bởi context.</p>
+            </div>
+            <div class="mini-bars"><i style="--h: 100%"></i><b style="--h: 4%"></b></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section examples-section" id="examples">
+        <div class="section-heading examples-heading">
+          <div>
+            <p class="eyebrow">Run explorer</p>
+            <h2>Đọc từng lần chạy.</h2>
+          </div>
+          <div class="filters" aria-label="Bộ lọc kết quả">
+            <button class="filter active" data-filter="all">Tất cả</button>
+            <button class="filter" data-filter="react">ReAct</button>
+            <button class="filter" data-filter="reflexion">Reflexion</button>
+            <button class="filter" data-filter="failed">Chỉ lỗi</button>
+          </div>
+        </div>
+
+        <div class="table-shell">
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Câu hỏi</th>
+                  <th>Agent</th>
+                  <th>Dự đoán</th>
+                  <th>Trạng thái</th>
+                  <th>Lần thử</th>
+                </tr>
+              </thead>
+              <tbody id="run-table">
+                <tr>
+                  <td colspan="5" class="loading-cell">Đang đọc benchmark report…</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table-footer">
+            <span id="visible-count">Đang tải dữ liệu</span>
+            <button id="load-more" type="button">Xem thêm 10 mẫu</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <span class="brand-mark small">R</span>
+        <p><strong>Reflexion Lab</strong><br />HotpotQA benchmark dashboard</p>
+      </div>
+      <p>Dữ liệu từ <code>outputs/hotpot_dev_100_mock/report.json</code></p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

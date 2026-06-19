@@ -1,0 +1,1802 @@
+[
+  {
+    "qid": "custom_01_1",
+    "difficulty": "medium",
+    "question": "What river flows through the city where Ada Lovelace was born?",
+    "gold_answer": "River Thames",
+    "context": [
+      {
+        "title": "Ada Lovelace",
+        "text": "Ada Lovelace was born in London, England."
+      },
+      {
+        "title": "London",
+        "text": "London is crossed by the River Thames."
+      }
+    ],
+    "mock_wrong_answer": "London",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_02_1",
+    "difficulty": "medium",
+    "question": "Which ocean borders the country whose capital is Lima?",
+    "gold_answer": "Pacific Ocean",
+    "context": [
+      {
+        "title": "Lima",
+        "text": "Lima is the capital city of Peru."
+      },
+      {
+        "title": "Peru",
+        "text": "Peru borders the Pacific Ocean."
+      }
+    ],
+    "mock_wrong_answer": "Atlantic Ocean",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_03_1",
+    "difficulty": "hard",
+    "question": "What sea borders the country where Petra is located?",
+    "gold_answer": "Dead Sea",
+    "context": [
+      {
+        "title": "Petra",
+        "text": "Petra is a historical city in Jordan."
+      },
+      {
+        "title": "Jordan",
+        "text": "Jordan borders the Dead Sea to the west."
+      }
+    ],
+    "mock_wrong_answer": "Red Sea",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_04_1",
+    "difficulty": "hard",
+    "question": "Which mountain range contains the highest mountain in Nepal?",
+    "gold_answer": "Himalayas",
+    "context": [
+      {
+        "title": "Nepal",
+        "text": "Mount Everest is the highest mountain in Nepal."
+      },
+      {
+        "title": "Mount Everest",
+        "text": "Mount Everest is part of the Himalayas."
+      }
+    ],
+    "mock_wrong_answer": "Andes",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_05_1",
+    "difficulty": "medium",
+    "question": "What language family includes the official language of Brazil?",
+    "gold_answer": "Romance",
+    "context": [
+      {
+        "title": "Brazil",
+        "text": "The official language of Brazil is Portuguese."
+      },
+      {
+        "title": "Portuguese",
+        "text": "Portuguese is a Romance language."
+      }
+    ],
+    "mock_wrong_answer": "Portuguese",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_06_1",
+    "difficulty": "easy",
+    "question": "Which university employed the author of The Hobbit as a professor?",
+    "gold_answer": "Oxford University",
+    "context": [
+      {
+        "title": "The Hobbit",
+        "text": "The Hobbit was written by J. R. R. Tolkien."
+      },
+      {
+        "title": "J. R. R. Tolkien",
+        "text": "Tolkien was a professor at Oxford University."
+      }
+    ],
+    "mock_wrong_answer": "Cambridge University",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_07_1",
+    "difficulty": "medium",
+    "question": "What instrument was played by the composer of The Four Seasons?",
+    "gold_answer": "violin",
+    "context": [
+      {
+        "title": "The Four Seasons",
+        "text": "The Four Seasons was composed by Antonio Vivaldi."
+      },
+      {
+        "title": "Antonio Vivaldi",
+        "text": "Antonio Vivaldi was a virtuoso violinist."
+      }
+    ],
+    "mock_wrong_answer": "piano",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_08_1",
+    "difficulty": "medium",
+    "question": "Which continent contains the country whose capital is Nairobi?",
+    "gold_answer": "Africa",
+    "context": [
+      {
+        "title": "Nairobi",
+        "text": "Nairobi is the capital of Kenya."
+      },
+      {
+        "title": "Kenya",
+        "text": "Kenya is a country in Africa."
+      }
+    ],
+    "mock_wrong_answer": "Kenya",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_09_1",
+    "difficulty": "hard",
+    "question": "What currency is used in the country containing Kyoto?",
+    "gold_answer": "Japanese yen",
+    "context": [
+      {
+        "title": "Kyoto",
+        "text": "Kyoto is a city in Japan."
+      },
+      {
+        "title": "Japan",
+        "text": "The currency of Japan is the Japanese yen."
+      }
+    ],
+    "mock_wrong_answer": "Chinese yuan",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_10_1",
+    "difficulty": "medium",
+    "question": "Which sea borders the country whose capital is Athens?",
+    "gold_answer": "Aegean Sea",
+    "context": [
+      {
+        "title": "Athens",
+        "text": "Athens is the capital of Greece."
+      },
+      {
+        "title": "Greece",
+        "text": "Greece borders the Aegean Sea."
+      }
+    ],
+    "mock_wrong_answer": "Mediterranean Sea",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_11_1",
+    "difficulty": "easy",
+    "question": "What scientific field was studied by the person who formulated the laws of motion?",
+    "gold_answer": "mathematics",
+    "context": [
+      {
+        "title": "Laws of motion",
+        "text": "The laws of motion were formulated by Isaac Newton."
+      },
+      {
+        "title": "Isaac Newton",
+        "text": "Isaac Newton was a physicist and mathematician."
+      }
+    ],
+    "mock_wrong_answer": "Isaac Newton",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_12_1",
+    "difficulty": "hard",
+    "question": "Which desert lies in the country whose capital is Ulaanbaatar?",
+    "gold_answer": "Gobi Desert",
+    "context": [
+      {
+        "title": "Ulaanbaatar",
+        "text": "Ulaanbaatar is the capital of Mongolia."
+      },
+      {
+        "title": "Mongolia",
+        "text": "A large part of the Gobi Desert lies in Mongolia."
+      }
+    ],
+    "mock_wrong_answer": "Sahara",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_13_1",
+    "difficulty": "medium",
+    "question": "What is the capital of the country containing Barcelona?",
+    "gold_answer": "Madrid",
+    "context": [
+      {
+        "title": "Barcelona",
+        "text": "Barcelona is a city in Spain."
+      },
+      {
+        "title": "Spain",
+        "text": "Madrid is the capital of Spain."
+      }
+    ],
+    "mock_wrong_answer": "Barcelona",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_14_1",
+    "difficulty": "hard",
+    "question": "Which river crosses the capital of Hungary?",
+    "gold_answer": "Danube",
+    "context": [
+      {
+        "title": "Hungary",
+        "text": "Budapest is the capital of Hungary."
+      },
+      {
+        "title": "Budapest",
+        "text": "The Danube flows through Budapest."
+      }
+    ],
+    "mock_wrong_answer": "Rhine",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_15_1",
+    "difficulty": "medium",
+    "question": "What language is official in the country containing Quebec City?",
+    "gold_answer": "French",
+    "context": [
+      {
+        "title": "Quebec City",
+        "text": "Quebec City is in Canada."
+      },
+      {
+        "title": "Canada",
+        "text": "French is one of Canada's official languages."
+      }
+    ],
+    "mock_wrong_answer": "Spanish",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_16_1",
+    "difficulty": "easy",
+    "question": "Which planet was studied by the scientist who discovered its four largest moons?",
+    "gold_answer": "Jupiter",
+    "context": [
+      {
+        "title": "Galilean moons",
+        "text": "The four largest moons were discovered by Galileo Galilei."
+      },
+      {
+        "title": "Galileo Galilei",
+        "text": "Galileo observed and studied Jupiter."
+      }
+    ],
+    "mock_wrong_answer": "Galileo Galilei",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_17_1",
+    "difficulty": "hard",
+    "question": "Which ocean surrounds the island country whose capital is Malé?",
+    "gold_answer": "Indian Ocean",
+    "context": [
+      {
+        "title": "Malé",
+        "text": "Malé is the capital of the Maldives."
+      },
+      {
+        "title": "Maldives",
+        "text": "The Maldives is an island country in the Indian Ocean."
+      }
+    ],
+    "mock_wrong_answer": "Pacific Ocean",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_18_1",
+    "difficulty": "medium",
+    "question": "What is the currency of the country whose capital is Bern?",
+    "gold_answer": "Swiss franc",
+    "context": [
+      {
+        "title": "Bern",
+        "text": "Bern is the de facto capital of Switzerland."
+      },
+      {
+        "title": "Switzerland",
+        "text": "The currency of Switzerland is the Swiss franc."
+      }
+    ],
+    "mock_wrong_answer": "euro",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_19_1",
+    "difficulty": "hard",
+    "question": "Which mountain range includes Mont Blanc?",
+    "gold_answer": "Alps",
+    "context": [
+      {
+        "title": "Mont Blanc",
+        "text": "Mont Blanc lies on the border of France and Italy."
+      },
+      {
+        "title": "European ranges",
+        "text": "Mont Blanc is the highest mountain in the Alps."
+      }
+    ],
+    "mock_wrong_answer": "Pyrenees",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_20_1",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where Machu Picchu is located?",
+    "gold_answer": "Lima",
+    "context": [
+      {
+        "title": "Machu Picchu",
+        "text": "Machu Picchu is located in Peru."
+      },
+      {
+        "title": "Peru",
+        "text": "Lima is the capital of Peru."
+      }
+    ],
+    "mock_wrong_answer": "Peru",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_01_2",
+    "difficulty": "medium",
+    "question": "What river flows through the city where Ada Lovelace was born?",
+    "gold_answer": "River Thames",
+    "context": [
+      {
+        "title": "Ada Lovelace",
+        "text": "Ada Lovelace was born in London, England."
+      },
+      {
+        "title": "London",
+        "text": "London is crossed by the River Thames."
+      }
+    ],
+    "mock_wrong_answer": "London",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_02_2",
+    "difficulty": "medium",
+    "question": "Which ocean borders the country whose capital is Lima?",
+    "gold_answer": "Pacific Ocean",
+    "context": [
+      {
+        "title": "Lima",
+        "text": "Lima is the capital city of Peru."
+      },
+      {
+        "title": "Peru",
+        "text": "Peru borders the Pacific Ocean."
+      }
+    ],
+    "mock_wrong_answer": "Atlantic Ocean",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_03_2",
+    "difficulty": "hard",
+    "question": "What sea borders the country where Petra is located?",
+    "gold_answer": "Dead Sea",
+    "context": [
+      {
+        "title": "Petra",
+        "text": "Petra is a historical city in Jordan."
+      },
+      {
+        "title": "Jordan",
+        "text": "Jordan borders the Dead Sea to the west."
+      }
+    ],
+    "mock_wrong_answer": "Red Sea",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_04_2",
+    "difficulty": "hard",
+    "question": "Which mountain range contains the highest mountain in Nepal?",
+    "gold_answer": "Himalayas",
+    "context": [
+      {
+        "title": "Nepal",
+        "text": "Mount Everest is the highest mountain in Nepal."
+      },
+      {
+        "title": "Mount Everest",
+        "text": "Mount Everest is part of the Himalayas."
+      }
+    ],
+    "mock_wrong_answer": "Andes",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_05_2",
+    "difficulty": "medium",
+    "question": "What language family includes the official language of Brazil?",
+    "gold_answer": "Romance",
+    "context": [
+      {
+        "title": "Brazil",
+        "text": "The official language of Brazil is Portuguese."
+      },
+      {
+        "title": "Portuguese",
+        "text": "Portuguese is a Romance language."
+      }
+    ],
+    "mock_wrong_answer": "Portuguese",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_06_2",
+    "difficulty": "easy",
+    "question": "Which university employed the author of The Hobbit as a professor?",
+    "gold_answer": "Oxford University",
+    "context": [
+      {
+        "title": "The Hobbit",
+        "text": "The Hobbit was written by J. R. R. Tolkien."
+      },
+      {
+        "title": "J. R. R. Tolkien",
+        "text": "Tolkien was a professor at Oxford University."
+      }
+    ],
+    "mock_wrong_answer": "Cambridge University",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_07_2",
+    "difficulty": "medium",
+    "question": "What instrument was played by the composer of The Four Seasons?",
+    "gold_answer": "violin",
+    "context": [
+      {
+        "title": "The Four Seasons",
+        "text": "The Four Seasons was composed by Antonio Vivaldi."
+      },
+      {
+        "title": "Antonio Vivaldi",
+        "text": "Antonio Vivaldi was a virtuoso violinist."
+      }
+    ],
+    "mock_wrong_answer": "piano",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_08_2",
+    "difficulty": "medium",
+    "question": "Which continent contains the country whose capital is Nairobi?",
+    "gold_answer": "Africa",
+    "context": [
+      {
+        "title": "Nairobi",
+        "text": "Nairobi is the capital of Kenya."
+      },
+      {
+        "title": "Kenya",
+        "text": "Kenya is a country in Africa."
+      }
+    ],
+    "mock_wrong_answer": "Kenya",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_09_2",
+    "difficulty": "hard",
+    "question": "What currency is used in the country containing Kyoto?",
+    "gold_answer": "Japanese yen",
+    "context": [
+      {
+        "title": "Kyoto",
+        "text": "Kyoto is a city in Japan."
+      },
+      {
+        "title": "Japan",
+        "text": "The currency of Japan is the Japanese yen."
+      }
+    ],
+    "mock_wrong_answer": "Chinese yuan",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_10_2",
+    "difficulty": "medium",
+    "question": "Which sea borders the country whose capital is Athens?",
+    "gold_answer": "Aegean Sea",
+    "context": [
+      {
+        "title": "Athens",
+        "text": "Athens is the capital of Greece."
+      },
+      {
+        "title": "Greece",
+        "text": "Greece borders the Aegean Sea."
+      }
+    ],
+    "mock_wrong_answer": "Mediterranean Sea",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_11_2",
+    "difficulty": "easy",
+    "question": "What scientific field was studied by the person who formulated the laws of motion?",
+    "gold_answer": "mathematics",
+    "context": [
+      {
+        "title": "Laws of motion",
+        "text": "The laws of motion were formulated by Isaac Newton."
+      },
+      {
+        "title": "Isaac Newton",
+        "text": "Isaac Newton was a physicist and mathematician."
+      }
+    ],
+    "mock_wrong_answer": "Isaac Newton",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_12_2",
+    "difficulty": "hard",
+    "question": "Which desert lies in the country whose capital is Ulaanbaatar?",
+    "gold_answer": "Gobi Desert",
+    "context": [
+      {
+        "title": "Ulaanbaatar",
+        "text": "Ulaanbaatar is the capital of Mongolia."
+      },
+      {
+        "title": "Mongolia",
+        "text": "A large part of the Gobi Desert lies in Mongolia."
+      }
+    ],
+    "mock_wrong_answer": "Sahara",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_13_2",
+    "difficulty": "medium",
+    "question": "What is the capital of the country containing Barcelona?",
+    "gold_answer": "Madrid",
+    "context": [
+      {
+        "title": "Barcelona",
+        "text": "Barcelona is a city in Spain."
+      },
+      {
+        "title": "Spain",
+        "text": "Madrid is the capital of Spain."
+      }
+    ],
+    "mock_wrong_answer": "Barcelona",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_14_2",
+    "difficulty": "hard",
+    "question": "Which river crosses the capital of Hungary?",
+    "gold_answer": "Danube",
+    "context": [
+      {
+        "title": "Hungary",
+        "text": "Budapest is the capital of Hungary."
+      },
+      {
+        "title": "Budapest",
+        "text": "The Danube flows through Budapest."
+      }
+    ],
+    "mock_wrong_answer": "Rhine",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_15_2",
+    "difficulty": "medium",
+    "question": "What language is official in the country containing Quebec City?",
+    "gold_answer": "French",
+    "context": [
+      {
+        "title": "Quebec City",
+        "text": "Quebec City is in Canada."
+      },
+      {
+        "title": "Canada",
+        "text": "French is one of Canada's official languages."
+      }
+    ],
+    "mock_wrong_answer": "Spanish",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_16_2",
+    "difficulty": "easy",
+    "question": "Which planet was studied by the scientist who discovered its four largest moons?",
+    "gold_answer": "Jupiter",
+    "context": [
+      {
+        "title": "Galilean moons",
+        "text": "The four largest moons were discovered by Galileo Galilei."
+      },
+      {
+        "title": "Galileo Galilei",
+        "text": "Galileo observed and studied Jupiter."
+      }
+    ],
+    "mock_wrong_answer": "Galileo Galilei",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_17_2",
+    "difficulty": "hard",
+    "question": "Which ocean surrounds the island country whose capital is Malé?",
+    "gold_answer": "Indian Ocean",
+    "context": [
+      {
+        "title": "Malé",
+        "text": "Malé is the capital of the Maldives."
+      },
+      {
+        "title": "Maldives",
+        "text": "The Maldives is an island country in the Indian Ocean."
+      }
+    ],
+    "mock_wrong_answer": "Pacific Ocean",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_18_2",
+    "difficulty": "medium",
+    "question": "What is the currency of the country whose capital is Bern?",
+    "gold_answer": "Swiss franc",
+    "context": [
+      {
+        "title": "Bern",
+        "text": "Bern is the de facto capital of Switzerland."
+      },
+      {
+        "title": "Switzerland",
+        "text": "The currency of Switzerland is the Swiss franc."
+      }
+    ],
+    "mock_wrong_answer": "euro",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_19_2",
+    "difficulty": "hard",
+    "question": "Which mountain range includes Mont Blanc?",
+    "gold_answer": "Alps",
+    "context": [
+      {
+        "title": "Mont Blanc",
+        "text": "Mont Blanc lies on the border of France and Italy."
+      },
+      {
+        "title": "European ranges",
+        "text": "Mont Blanc is the highest mountain in the Alps."
+      }
+    ],
+    "mock_wrong_answer": "Pyrenees",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_20_2",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where Machu Picchu is located?",
+    "gold_answer": "Lima",
+    "context": [
+      {
+        "title": "Machu Picchu",
+        "text": "Machu Picchu is located in Peru."
+      },
+      {
+        "title": "Peru",
+        "text": "Lima is the capital of Peru."
+      }
+    ],
+    "mock_wrong_answer": "Peru",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_01_3",
+    "difficulty": "medium",
+    "question": "What river flows through the city where Ada Lovelace was born?",
+    "gold_answer": "River Thames",
+    "context": [
+      {
+        "title": "Ada Lovelace",
+        "text": "Ada Lovelace was born in London, England."
+      },
+      {
+        "title": "London",
+        "text": "London is crossed by the River Thames."
+      }
+    ],
+    "mock_wrong_answer": "London",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_02_3",
+    "difficulty": "medium",
+    "question": "Which ocean borders the country whose capital is Lima?",
+    "gold_answer": "Pacific Ocean",
+    "context": [
+      {
+        "title": "Lima",
+        "text": "Lima is the capital city of Peru."
+      },
+      {
+        "title": "Peru",
+        "text": "Peru borders the Pacific Ocean."
+      }
+    ],
+    "mock_wrong_answer": "Atlantic Ocean",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_03_3",
+    "difficulty": "hard",
+    "question": "What sea borders the country where Petra is located?",
+    "gold_answer": "Dead Sea",
+    "context": [
+      {
+        "title": "Petra",
+        "text": "Petra is a historical city in Jordan."
+      },
+      {
+        "title": "Jordan",
+        "text": "Jordan borders the Dead Sea to the west."
+      }
+    ],
+    "mock_wrong_answer": "Red Sea",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_04_3",
+    "difficulty": "hard",
+    "question": "Which mountain range contains the highest mountain in Nepal?",
+    "gold_answer": "Himalayas",
+    "context": [
+      {
+        "title": "Nepal",
+        "text": "Mount Everest is the highest mountain in Nepal."
+      },
+      {
+        "title": "Mount Everest",
+        "text": "Mount Everest is part of the Himalayas."
+      }
+    ],
+    "mock_wrong_answer": "Andes",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_05_3",
+    "difficulty": "medium",
+    "question": "What language family includes the official language of Brazil?",
+    "gold_answer": "Romance",
+    "context": [
+      {
+        "title": "Brazil",
+        "text": "The official language of Brazil is Portuguese."
+      },
+      {
+        "title": "Portuguese",
+        "text": "Portuguese is a Romance language."
+      }
+    ],
+    "mock_wrong_answer": "Portuguese",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_06_3",
+    "difficulty": "easy",
+    "question": "Which university employed the author of The Hobbit as a professor?",
+    "gold_answer": "Oxford University",
+    "context": [
+      {
+        "title": "The Hobbit",
+        "text": "The Hobbit was written by J. R. R. Tolkien."
+      },
+      {
+        "title": "J. R. R. Tolkien",
+        "text": "Tolkien was a professor at Oxford University."
+      }
+    ],
+    "mock_wrong_answer": "Cambridge University",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_07_3",
+    "difficulty": "medium",
+    "question": "What instrument was played by the composer of The Four Seasons?",
+    "gold_answer": "violin",
+    "context": [
+      {
+        "title": "The Four Seasons",
+        "text": "The Four Seasons was composed by Antonio Vivaldi."
+      },
+      {
+        "title": "Antonio Vivaldi",
+        "text": "Antonio Vivaldi was a virtuoso violinist."
+      }
+    ],
+    "mock_wrong_answer": "piano",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_08_3",
+    "difficulty": "medium",
+    "question": "Which continent contains the country whose capital is Nairobi?",
+    "gold_answer": "Africa",
+    "context": [
+      {
+        "title": "Nairobi",
+        "text": "Nairobi is the capital of Kenya."
+      },
+      {
+        "title": "Kenya",
+        "text": "Kenya is a country in Africa."
+      }
+    ],
+    "mock_wrong_answer": "Kenya",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_09_3",
+    "difficulty": "hard",
+    "question": "What currency is used in the country containing Kyoto?",
+    "gold_answer": "Japanese yen",
+    "context": [
+      {
+        "title": "Kyoto",
+        "text": "Kyoto is a city in Japan."
+      },
+      {
+        "title": "Japan",
+        "text": "The currency of Japan is the Japanese yen."
+      }
+    ],
+    "mock_wrong_answer": "Chinese yuan",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_10_3",
+    "difficulty": "medium",
+    "question": "Which sea borders the country whose capital is Athens?",
+    "gold_answer": "Aegean Sea",
+    "context": [
+      {
+        "title": "Athens",
+        "text": "Athens is the capital of Greece."
+      },
+      {
+        "title": "Greece",
+        "text": "Greece borders the Aegean Sea."
+      }
+    ],
+    "mock_wrong_answer": "Mediterranean Sea",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_11_3",
+    "difficulty": "easy",
+    "question": "What scientific field was studied by the person who formulated the laws of motion?",
+    "gold_answer": "mathematics",
+    "context": [
+      {
+        "title": "Laws of motion",
+        "text": "The laws of motion were formulated by Isaac Newton."
+      },
+      {
+        "title": "Isaac Newton",
+        "text": "Isaac Newton was a physicist and mathematician."
+      }
+    ],
+    "mock_wrong_answer": "Isaac Newton",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_12_3",
+    "difficulty": "hard",
+    "question": "Which desert lies in the country whose capital is Ulaanbaatar?",
+    "gold_answer": "Gobi Desert",
+    "context": [
+      {
+        "title": "Ulaanbaatar",
+        "text": "Ulaanbaatar is the capital of Mongolia."
+      },
+      {
+        "title": "Mongolia",
+        "text": "A large part of the Gobi Desert lies in Mongolia."
+      }
+    ],
+    "mock_wrong_answer": "Sahara",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_13_3",
+    "difficulty": "medium",
+    "question": "What is the capital of the country containing Barcelona?",
+    "gold_answer": "Madrid",
+    "context": [
+      {
+        "title": "Barcelona",
+        "text": "Barcelona is a city in Spain."
+      },
+      {
+        "title": "Spain",
+        "text": "Madrid is the capital of Spain."
+      }
+    ],
+    "mock_wrong_answer": "Barcelona",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_14_3",
+    "difficulty": "hard",
+    "question": "Which river crosses the capital of Hungary?",
+    "gold_answer": "Danube",
+    "context": [
+      {
+        "title": "Hungary",
+        "text": "Budapest is the capital of Hungary."
+      },
+      {
+        "title": "Budapest",
+        "text": "The Danube flows through Budapest."
+      }
+    ],
+    "mock_wrong_answer": "Rhine",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_15_3",
+    "difficulty": "medium",
+    "question": "What language is official in the country containing Quebec City?",
+    "gold_answer": "French",
+    "context": [
+      {
+        "title": "Quebec City",
+        "text": "Quebec City is in Canada."
+      },
+      {
+        "title": "Canada",
+        "text": "French is one of Canada's official languages."
+      }
+    ],
+    "mock_wrong_answer": "Spanish",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_16_3",
+    "difficulty": "easy",
+    "question": "Which planet was studied by the scientist who discovered its four largest moons?",
+    "gold_answer": "Jupiter",
+    "context": [
+      {
+        "title": "Galilean moons",
+        "text": "The four largest moons were discovered by Galileo Galilei."
+      },
+      {
+        "title": "Galileo Galilei",
+        "text": "Galileo observed and studied Jupiter."
+      }
+    ],
+    "mock_wrong_answer": "Galileo Galilei",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_17_3",
+    "difficulty": "hard",
+    "question": "Which ocean surrounds the island country whose capital is Malé?",
+    "gold_answer": "Indian Ocean",
+    "context": [
+      {
+        "title": "Malé",
+        "text": "Malé is the capital of the Maldives."
+      },
+      {
+        "title": "Maldives",
+        "text": "The Maldives is an island country in the Indian Ocean."
+      }
+    ],
+    "mock_wrong_answer": "Pacific Ocean",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_18_3",
+    "difficulty": "medium",
+    "question": "What is the currency of the country whose capital is Bern?",
+    "gold_answer": "Swiss franc",
+    "context": [
+      {
+        "title": "Bern",
+        "text": "Bern is the de facto capital of Switzerland."
+      },
+      {
+        "title": "Switzerland",
+        "text": "The currency of Switzerland is the Swiss franc."
+      }
+    ],
+    "mock_wrong_answer": "euro",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_19_3",
+    "difficulty": "hard",
+    "question": "Which mountain range includes Mont Blanc?",
+    "gold_answer": "Alps",
+    "context": [
+      {
+        "title": "Mont Blanc",
+        "text": "Mont Blanc lies on the border of France and Italy."
+      },
+      {
+        "title": "European ranges",
+        "text": "Mont Blanc is the highest mountain in the Alps."
+      }
+    ],
+    "mock_wrong_answer": "Pyrenees",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_20_3",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where Machu Picchu is located?",
+    "gold_answer": "Lima",
+    "context": [
+      {
+        "title": "Machu Picchu",
+        "text": "Machu Picchu is located in Peru."
+      },
+      {
+        "title": "Peru",
+        "text": "Lima is the capital of Peru."
+      }
+    ],
+    "mock_wrong_answer": "Peru",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_01_4",
+    "difficulty": "medium",
+    "question": "What river flows through the city where Ada Lovelace was born?",
+    "gold_answer": "River Thames",
+    "context": [
+      {
+        "title": "Ada Lovelace",
+        "text": "Ada Lovelace was born in London, England."
+      },
+      {
+        "title": "London",
+        "text": "London is crossed by the River Thames."
+      }
+    ],
+    "mock_wrong_answer": "London",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_02_4",
+    "difficulty": "medium",
+    "question": "Which ocean borders the country whose capital is Lima?",
+    "gold_answer": "Pacific Ocean",
+    "context": [
+      {
+        "title": "Lima",
+        "text": "Lima is the capital city of Peru."
+      },
+      {
+        "title": "Peru",
+        "text": "Peru borders the Pacific Ocean."
+      }
+    ],
+    "mock_wrong_answer": "Atlantic Ocean",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_03_4",
+    "difficulty": "hard",
+    "question": "What sea borders the country where Petra is located?",
+    "gold_answer": "Dead Sea",
+    "context": [
+      {
+        "title": "Petra",
+        "text": "Petra is a historical city in Jordan."
+      },
+      {
+        "title": "Jordan",
+        "text": "Jordan borders the Dead Sea to the west."
+      }
+    ],
+    "mock_wrong_answer": "Red Sea",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_04_4",
+    "difficulty": "hard",
+    "question": "Which mountain range contains the highest mountain in Nepal?",
+    "gold_answer": "Himalayas",
+    "context": [
+      {
+        "title": "Nepal",
+        "text": "Mount Everest is the highest mountain in Nepal."
+      },
+      {
+        "title": "Mount Everest",
+        "text": "Mount Everest is part of the Himalayas."
+      }
+    ],
+    "mock_wrong_answer": "Andes",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_05_4",
+    "difficulty": "medium",
+    "question": "What language family includes the official language of Brazil?",
+    "gold_answer": "Romance",
+    "context": [
+      {
+        "title": "Brazil",
+        "text": "The official language of Brazil is Portuguese."
+      },
+      {
+        "title": "Portuguese",
+        "text": "Portuguese is a Romance language."
+      }
+    ],
+    "mock_wrong_answer": "Portuguese",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_06_4",
+    "difficulty": "easy",
+    "question": "Which university employed the author of The Hobbit as a professor?",
+    "gold_answer": "Oxford University",
+    "context": [
+      {
+        "title": "The Hobbit",
+        "text": "The Hobbit was written by J. R. R. Tolkien."
+      },
+      {
+        "title": "J. R. R. Tolkien",
+        "text": "Tolkien was a professor at Oxford University."
+      }
+    ],
+    "mock_wrong_answer": "Cambridge University",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_07_4",
+    "difficulty": "medium",
+    "question": "What instrument was played by the composer of The Four Seasons?",
+    "gold_answer": "violin",
+    "context": [
+      {
+        "title": "The Four Seasons",
+        "text": "The Four Seasons was composed by Antonio Vivaldi."
+      },
+      {
+        "title": "Antonio Vivaldi",
+        "text": "Antonio Vivaldi was a virtuoso violinist."
+      }
+    ],
+    "mock_wrong_answer": "piano",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_08_4",
+    "difficulty": "medium",
+    "question": "Which continent contains the country whose capital is Nairobi?",
+    "gold_answer": "Africa",
+    "context": [
+      {
+        "title": "Nairobi",
+        "text": "Nairobi is the capital of Kenya."
+      },
+      {
+        "title": "Kenya",
+        "text": "Kenya is a country in Africa."
+      }
+    ],
+    "mock_wrong_answer": "Kenya",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_09_4",
+    "difficulty": "hard",
+    "question": "What currency is used in the country containing Kyoto?",
+    "gold_answer": "Japanese yen",
+    "context": [
+      {
+        "title": "Kyoto",
+        "text": "Kyoto is a city in Japan."
+      },
+      {
+        "title": "Japan",
+        "text": "The currency of Japan is the Japanese yen."
+      }
+    ],
+    "mock_wrong_answer": "Chinese yuan",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_10_4",
+    "difficulty": "medium",
+    "question": "Which sea borders the country whose capital is Athens?",
+    "gold_answer": "Aegean Sea",
+    "context": [
+      {
+        "title": "Athens",
+        "text": "Athens is the capital of Greece."
+      },
+      {
+        "title": "Greece",
+        "text": "Greece borders the Aegean Sea."
+      }
+    ],
+    "mock_wrong_answer": "Mediterranean Sea",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_11_4",
+    "difficulty": "easy",
+    "question": "What scientific field was studied by the person who formulated the laws of motion?",
+    "gold_answer": "mathematics",
+    "context": [
+      {
+        "title": "Laws of motion",
+        "text": "The laws of motion were formulated by Isaac Newton."
+      },
+      {
+        "title": "Isaac Newton",
+        "text": "Isaac Newton was a physicist and mathematician."
+      }
+    ],
+    "mock_wrong_answer": "Isaac Newton",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_12_4",
+    "difficulty": "hard",
+    "question": "Which desert lies in the country whose capital is Ulaanbaatar?",
+    "gold_answer": "Gobi Desert",
+    "context": [
+      {
+        "title": "Ulaanbaatar",
+        "text": "Ulaanbaatar is the capital of Mongolia."
+      },
+      {
+        "title": "Mongolia",
+        "text": "A large part of the Gobi Desert lies in Mongolia."
+      }
+    ],
+    "mock_wrong_answer": "Sahara",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_13_4",
+    "difficulty": "medium",
+    "question": "What is the capital of the country containing Barcelona?",
+    "gold_answer": "Madrid",
+    "context": [
+      {
+        "title": "Barcelona",
+        "text": "Barcelona is a city in Spain."
+      },
+      {
+        "title": "Spain",
+        "text": "Madrid is the capital of Spain."
+      }
+    ],
+    "mock_wrong_answer": "Barcelona",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_14_4",
+    "difficulty": "hard",
+    "question": "Which river crosses the capital of Hungary?",
+    "gold_answer": "Danube",
+    "context": [
+      {
+        "title": "Hungary",
+        "text": "Budapest is the capital of Hungary."
+      },
+      {
+        "title": "Budapest",
+        "text": "The Danube flows through Budapest."
+      }
+    ],
+    "mock_wrong_answer": "Rhine",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_15_4",
+    "difficulty": "medium",
+    "question": "What language is official in the country containing Quebec City?",
+    "gold_answer": "French",
+    "context": [
+      {
+        "title": "Quebec City",
+        "text": "Quebec City is in Canada."
+      },
+      {
+        "title": "Canada",
+        "text": "French is one of Canada's official languages."
+      }
+    ],
+    "mock_wrong_answer": "Spanish",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_16_4",
+    "difficulty": "easy",
+    "question": "Which planet was studied by the scientist who discovered its four largest moons?",
+    "gold_answer": "Jupiter",
+    "context": [
+      {
+        "title": "Galilean moons",
+        "text": "The four largest moons were discovered by Galileo Galilei."
+      },
+      {
+        "title": "Galileo Galilei",
+        "text": "Galileo observed and studied Jupiter."
+      }
+    ],
+    "mock_wrong_answer": "Galileo Galilei",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_17_4",
+    "difficulty": "hard",
+    "question": "Which ocean surrounds the island country whose capital is Malé?",
+    "gold_answer": "Indian Ocean",
+    "context": [
+      {
+        "title": "Malé",
+        "text": "Malé is the capital of the Maldives."
+      },
+      {
+        "title": "Maldives",
+        "text": "The Maldives is an island country in the Indian Ocean."
+      }
+    ],
+    "mock_wrong_answer": "Pacific Ocean",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_18_4",
+    "difficulty": "medium",
+    "question": "What is the currency of the country whose capital is Bern?",
+    "gold_answer": "Swiss franc",
+    "context": [
+      {
+        "title": "Bern",
+        "text": "Bern is the de facto capital of Switzerland."
+      },
+      {
+        "title": "Switzerland",
+        "text": "The currency of Switzerland is the Swiss franc."
+      }
+    ],
+    "mock_wrong_answer": "euro",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_19_4",
+    "difficulty": "hard",
+    "question": "Which mountain range includes Mont Blanc?",
+    "gold_answer": "Alps",
+    "context": [
+      {
+        "title": "Mont Blanc",
+        "text": "Mont Blanc lies on the border of France and Italy."
+      },
+      {
+        "title": "European ranges",
+        "text": "Mont Blanc is the highest mountain in the Alps."
+      }
+    ],
+    "mock_wrong_answer": "Pyrenees",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_20_4",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where Machu Picchu is located?",
+    "gold_answer": "Lima",
+    "context": [
+      {
+        "title": "Machu Picchu",
+        "text": "Machu Picchu is located in Peru."
+      },
+      {
+        "title": "Peru",
+        "text": "Lima is the capital of Peru."
+      }
+    ],
+    "mock_wrong_answer": "Peru",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_01_5",
+    "difficulty": "medium",
+    "question": "What river flows through the city where Ada Lovelace was born?",
+    "gold_answer": "River Thames",
+    "context": [
+      {
+        "title": "Ada Lovelace",
+        "text": "Ada Lovelace was born in London, England."
+      },
+      {
+        "title": "London",
+        "text": "London is crossed by the River Thames."
+      }
+    ],
+    "mock_wrong_answer": "London",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_02_5",
+    "difficulty": "medium",
+    "question": "Which ocean borders the country whose capital is Lima?",
+    "gold_answer": "Pacific Ocean",
+    "context": [
+      {
+        "title": "Lima",
+        "text": "Lima is the capital city of Peru."
+      },
+      {
+        "title": "Peru",
+        "text": "Peru borders the Pacific Ocean."
+      }
+    ],
+    "mock_wrong_answer": "Atlantic Ocean",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_03_5",
+    "difficulty": "hard",
+    "question": "What sea borders the country where Petra is located?",
+    "gold_answer": "Dead Sea",
+    "context": [
+      {
+        "title": "Petra",
+        "text": "Petra is a historical city in Jordan."
+      },
+      {
+        "title": "Jordan",
+        "text": "Jordan borders the Dead Sea to the west."
+      }
+    ],
+    "mock_wrong_answer": "Red Sea",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_04_5",
+    "difficulty": "hard",
+    "question": "Which mountain range contains the highest mountain in Nepal?",
+    "gold_answer": "Himalayas",
+    "context": [
+      {
+        "title": "Nepal",
+        "text": "Mount Everest is the highest mountain in Nepal."
+      },
+      {
+        "title": "Mount Everest",
+        "text": "Mount Everest is part of the Himalayas."
+      }
+    ],
+    "mock_wrong_answer": "Andes",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_05_5",
+    "difficulty": "medium",
+    "question": "What language family includes the official language of Brazil?",
+    "gold_answer": "Romance",
+    "context": [
+      {
+        "title": "Brazil",
+        "text": "The official language of Brazil is Portuguese."
+      },
+      {
+        "title": "Portuguese",
+        "text": "Portuguese is a Romance language."
+      }
+    ],
+    "mock_wrong_answer": "Portuguese",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_06_5",
+    "difficulty": "easy",
+    "question": "Which university employed the author of The Hobbit as a professor?",
+    "gold_answer": "Oxford University",
+    "context": [
+      {
+        "title": "The Hobbit",
+        "text": "The Hobbit was written by J. R. R. Tolkien."
+      },
+      {
+        "title": "J. R. R. Tolkien",
+        "text": "Tolkien was a professor at Oxford University."
+      }
+    ],
+    "mock_wrong_answer": "Cambridge University",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_07_5",
+    "difficulty": "medium",
+    "question": "What instrument was played by the composer of The Four Seasons?",
+    "gold_answer": "violin",
+    "context": [
+      {
+        "title": "The Four Seasons",
+        "text": "The Four Seasons was composed by Antonio Vivaldi."
+      },
+      {
+        "title": "Antonio Vivaldi",
+        "text": "Antonio Vivaldi was a virtuoso violinist."
+      }
+    ],
+    "mock_wrong_answer": "piano",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_08_5",
+    "difficulty": "medium",
+    "question": "Which continent contains the country whose capital is Nairobi?",
+    "gold_answer": "Africa",
+    "context": [
+      {
+        "title": "Nairobi",
+        "text": "Nairobi is the capital of Kenya."
+      },
+      {
+        "title": "Kenya",
+        "text": "Kenya is a country in Africa."
+      }
+    ],
+    "mock_wrong_answer": "Kenya",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_09_5",
+    "difficulty": "hard",
+    "question": "What currency is used in the country containing Kyoto?",
+    "gold_answer": "Japanese yen",
+    "context": [
+      {
+        "title": "Kyoto",
+        "text": "Kyoto is a city in Japan."
+      },
+      {
+        "title": "Japan",
+        "text": "The currency of Japan is the Japanese yen."
+      }
+    ],
+    "mock_wrong_answer": "Chinese yuan",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_10_5",
+    "difficulty": "medium",
+    "question": "Which sea borders the country whose capital is Athens?",
+    "gold_answer": "Aegean Sea",
+    "context": [
+      {
+        "title": "Athens",
+        "text": "Athens is the capital of Greece."
+      },
+      {
+        "title": "Greece",
+        "text": "Greece borders the Aegean Sea."
+      }
+    ],
+    "mock_wrong_answer": "Mediterranean Sea",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_11_5",
+    "difficulty": "easy",
+    "question": "What scientific field was studied by the person who formulated the laws of motion?",
+    "gold_answer": "mathematics",
+    "context": [
+      {
+        "title": "Laws of motion",
+        "text": "The laws of motion were formulated by Isaac Newton."
+      },
+      {
+        "title": "Isaac Newton",
+        "text": "Isaac Newton was a physicist and mathematician."
+      }
+    ],
+    "mock_wrong_answer": "Isaac Newton",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_12_5",
+    "difficulty": "hard",
+    "question": "Which desert lies in the country whose capital is Ulaanbaatar?",
+    "gold_answer": "Gobi Desert",
+    "context": [
+      {
+        "title": "Ulaanbaatar",
+        "text": "Ulaanbaatar is the capital of Mongolia."
+      },
+      {
+        "title": "Mongolia",
+        "text": "A large part of the Gobi Desert lies in Mongolia."
+      }
+    ],
+    "mock_wrong_answer": "Sahara",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_13_5",
+    "difficulty": "medium",
+    "question": "What is the capital of the country containing Barcelona?",
+    "gold_answer": "Madrid",
+    "context": [
+      {
+        "title": "Barcelona",
+        "text": "Barcelona is a city in Spain."
+      },
+      {
+        "title": "Spain",
+        "text": "Madrid is the capital of Spain."
+      }
+    ],
+    "mock_wrong_answer": "Barcelona",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_14_5",
+    "difficulty": "hard",
+    "question": "Which river crosses the capital of Hungary?",
+    "gold_answer": "Danube",
+    "context": [
+      {
+        "title": "Hungary",
+        "text": "Budapest is the capital of Hungary."
+      },
+      {
+        "title": "Budapest",
+        "text": "The Danube flows through Budapest."
+      }
+    ],
+    "mock_wrong_answer": "Rhine",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_15_5",
+    "difficulty": "medium",
+    "question": "What language is official in the country containing Quebec City?",
+    "gold_answer": "French",
+    "context": [
+      {
+        "title": "Quebec City",
+        "text": "Quebec City is in Canada."
+      },
+      {
+        "title": "Canada",
+        "text": "French is one of Canada's official languages."
+      }
+    ],
+    "mock_wrong_answer": "Spanish",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_16_5",
+    "difficulty": "easy",
+    "question": "Which planet was studied by the scientist who discovered its four largest moons?",
+    "gold_answer": "Jupiter",
+    "context": [
+      {
+        "title": "Galilean moons",
+        "text": "The four largest moons were discovered by Galileo Galilei."
+      },
+      {
+        "title": "Galileo Galilei",
+        "text": "Galileo observed and studied Jupiter."
+      }
+    ],
+    "mock_wrong_answer": "Galileo Galilei",
+    "mock_failure_mode": "incomplete_multi_hop"
+  },
+  {
+    "qid": "custom_17_5",
+    "difficulty": "hard",
+    "question": "Which ocean surrounds the island country whose capital is Malé?",
+    "gold_answer": "Indian Ocean",
+    "context": [
+      {
+        "title": "Malé",
+        "text": "Malé is the capital of the Maldives."
+      },
+      {
+        "title": "Maldives",
+        "text": "The Maldives is an island country in the Indian Ocean."
+      }
+    ],
+    "mock_wrong_answer": "Pacific Ocean",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_18_5",
+    "difficulty": "medium",
+    "question": "What is the currency of the country whose capital is Bern?",
+    "gold_answer": "Swiss franc",
+    "context": [
+      {
+        "title": "Bern",
+        "text": "Bern is the de facto capital of Switzerland."
+      },
+      {
+        "title": "Switzerland",
+        "text": "The currency of Switzerland is the Swiss franc."
+      }
+    ],
+    "mock_wrong_answer": "euro",
+    "mock_failure_mode": "entity_drift"
+  },
+  {
+    "qid": "custom_19_5",
+    "difficulty": "hard",
+    "question": "Which mountain range includes Mont Blanc?",
+    "gold_answer": "Alps",
+    "context": [
+      {
+        "title": "Mont Blanc",
+        "text": "Mont Blanc lies on the border of France and Italy."
+      },
+      {
+        "title": "European ranges",
+        "text": "Mont Blanc is the highest mountain in the Alps."
+      }
+    ],
+    "mock_wrong_answer": "Pyrenees",
+    "mock_failure_mode": "wrong_final_answer"
+  },
+  {
+    "qid": "custom_20_5",
+    "difficulty": "medium",
+    "question": "What is the capital of the country where Machu Picchu is located?",
+    "gold_answer": "Lima",
+    "context": [
+      {
+        "title": "Machu Picchu",
+        "text": "Machu Picchu is located in Peru."
+      },
+      {
+        "title": "Peru",
+        "text": "Lima is the capital of Peru."
+      }
+    ],
+    "mock_wrong_answer": "Peru",
+    "mock_failure_mode": "incomplete_multi_hop"
+  }
+]
